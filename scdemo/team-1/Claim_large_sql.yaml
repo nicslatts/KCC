@@ -1,0 +1,10 @@
+apiVersion: infra.sample.org/v1alpha1
+kind: SQLResource
+metadata:
+  name: sqlclaim01
+  namespace: team-1
+spec:
+  size: large
+  compositionRef:
+    name: kcc-sql-composition
+

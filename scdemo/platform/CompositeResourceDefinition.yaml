@@ -1,0 +1,28 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: xsqlresources.infra.sample.org
+spec:
+  group: infra.sample.org
+  names:
+    kind: XSQLResource
+    plural: xsqlresources
+  claimNames:
+    kind: SQLResource
+    plural: sqlresources
+  versions:
+  - name: v1alpha1
+    served: true
+    referenceable: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+                size:
+                  type: string
+            required:
+            - size
+
