@@ -1,0 +1,11 @@
+apiVersion: vertexai.cnrm.cloud.google.com/v1beta1
+kind: VertexAIDataset
+metadata:
+  name: vertexaidataset-sample-basic
+spec:
+  displayName: "example vertex AI dataset"
+  metadataSchemaUri: "gs://google-cloud-aiplatform/schema/dataset/metadata/image_1.0.0.yaml"
+  region: us-central1
+  projectRef:
+    # Replace ${PROJECT_ID?} with your project ID.
+    external: anthosearly

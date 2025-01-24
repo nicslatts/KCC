@@ -1,0 +1,7 @@
+apiVersion: kms.cnrm.cloud.google.com/v1beta1
+kind: KMSKeyRing
+metadata:
+   name: kmscryptokeyring-us-central1
+   namespace: admin-ns
+spec:
+   location: us-central1

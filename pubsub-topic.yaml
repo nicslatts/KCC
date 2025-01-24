@@ -1,0 +1,9 @@
+apiVersion: pubsub.cnrm.cloud.google.com/v1beta1
+kind: PubSubTopic
+metadata:
+  annotations:
+    cnrm.cloud.google.com/project-id: anthosearly
+  labels:
+    environment: demo
+  name: nics-topic
+  namespace: admin-ns
